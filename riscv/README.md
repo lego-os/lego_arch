@@ -37,6 +37,6 @@ riscv64imac-unknown-none-elf
 
 ## 参考资料
 
-- Riscv isa specification：https://github.com/riscv/riscv-isa-manual/
-- Riscv plic：https://github.com/riscv/riscv-plic-spec.git
-- Riscv clic：https://github.com/riscv/riscv-fast-interrupt
+- [Riscv isa specification](https://github.com/riscv/riscv-isa-manual)
+- [Riscv plic](https://github.com/riscv/riscv-plic-spec.git)
+- [Riscv clic](https://github.com/riscv/riscv-fast-interrupt)

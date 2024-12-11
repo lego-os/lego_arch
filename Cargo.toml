@@ -12,7 +12,6 @@ x86 = { path = "x86", version = "0.1.0" }
 [target.'cfg(any(target_arch = "arm", target_arch = "aarch64"))'.dependencies]
 arm = { path = "arm", version = "0.1.0" }
 
-
 [workspace]
 members = ["riscv", "arm", "x86"]
 

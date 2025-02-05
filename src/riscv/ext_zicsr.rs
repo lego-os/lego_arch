@@ -30,15 +30,10 @@ macro_rules! csrw {
             asm!("csrw {0}, {1}",const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
-}
-
-/// 写入csr，立即数版本
-#[macro_export]
-macro_rules! csrwi {
     ($csr:ident,$val:expr) => {{
         use core::arch::asm;
         unsafe {
-            asm!("csrwi {0}, {1}",const $csr,in(reg) $val,options(nomem, nostack));
+            asm!("csrw {0}, {1}",const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
 }
@@ -52,15 +47,10 @@ macro_rules! csrs {
             asm!("csrs {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
-}
-
-/// 置位csr，立即数版本
-#[macro_export]
-macro_rules! csrsi {
     ($csr:ident,$val:expr) => {{
         use core::arch::asm;
         unsafe {
-            asm!("csrsi {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
+            asm!("csrs {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
 }
@@ -74,15 +64,10 @@ macro_rules! csrc {
             asm!("csrc {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
-}
-
-/// 清除位csr，立即数版本
-#[macro_export]
-macro_rules! csrci {
     ($csr:ident,$val:expr) => {{
         use core::arch::asm;
         unsafe {
-            asm!("csrci {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
+            asm!("csrc {0}, {1}", const $csr,in(reg) $val,options(nomem, nostack));
         }
     }};
 }

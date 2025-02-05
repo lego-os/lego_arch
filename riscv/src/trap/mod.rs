@@ -1,2 +1,0 @@
-mod clic;
-mod plic;

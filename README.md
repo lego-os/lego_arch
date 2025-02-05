@@ -25,8 +25,6 @@ lego标准接口组件，与架构相关
         <tr><td>rv64</td> <td>rv标准csr</td><td>rv标准指令</td><td>todo</td></tr>
         <tr><td rowspan = "2">arm</td> <td>aarch32</td><td>todo</td><td>todo</td><td>todo</td></tr>
         <tr><td>aarch64</td> <td>todo</td><td>todo</td><td>todo</td></tr>
-        <tr><td rowspan = "2">x86</td> <td>x86</td><td>todo</td><td>todo</td><td>todo</td></tr>
-        <tr><td>x86_64</td> <td>todo</td><td>todo</td><td>todo</td></tr>
     </tr>
 </table>
 ## 使用
